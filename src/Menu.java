@@ -13,26 +13,13 @@ public class Menu {
         while (choice != 0){
             switch (choice){
                 case 1:
-                    System.out.println("Draw the triangle: ");
-                    System.out.println("*****");
-                    System.out.println("****");
-                    System.out.println("***");
-                    System.out.println("**");
-                    System.out.println("*");
+                    drawTriangle();
                     break;
                 case 2:
-                    System.out.println("Draw the square: ");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
+                    drawSquare();
                     break;
                 case 3:
-                    System.out.println("Draw the rectangle: ");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
-                    System.out.println("* * * * *");
+                    drawRectangle();
                     break;
                 case 0:
                     System.exit(0);
@@ -42,6 +29,30 @@ public class Menu {
             System.out.println("Enter your choice: ");
             choice = scanner.nextInt();
         }
+    }
 
+    public static void drawTriangle() {
+        System.out.println("Draw the triangle: ");
+        System.out.println("*****");
+        System.out.println("****");
+        System.out.println("***");
+        System.out.println("**");
+        System.out.println("*");
+    }
+
+    public static void drawSquare() {
+        System.out.println("Draw the square: ");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
+    }
+
+    public static void drawRectangle(){
+        System.out.println("Draw the rectangle: ");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
+        System.out.println("* * * * *");
     }
 }
